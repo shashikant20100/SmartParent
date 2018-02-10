@@ -51,13 +51,13 @@ public abstract class Base_Page {
  
  
  
- public void validemailInvalidPassword(){
+ public void popmesg(String msg){
 	 
-	 WebDriverWait wait=new WebDriverWait(driver, 20);
+	 WebDriverWait wait=new WebDriverWait(driver, 10);
 	 wait.until(ExpectedConditions.alertIsPresent());
 		Alert pop = driver.switchTo().alert();
 		String text = pop.getText();
-		if(text.equalsIgnoreCase("Failure")){
+		if(text.equalsIgnoreCase(msg)){
 			Reporter.log("Displayed Valid Email and Invalid pop up",true);
 			pop.accept();
 		}
@@ -70,7 +70,7 @@ public abstract class Base_Page {
 		}
 	}
  
- 
+ /*
  public void invalidEmailFormat(){
 	 WebDriverWait wait=new WebDriverWait(driver, 20);
 	 wait.until(ExpectedConditions.alertIsPresent());
@@ -106,6 +106,6 @@ public abstract class Base_Page {
 			a.assertAll();
 		}
  }
- 
+ */
  
 }

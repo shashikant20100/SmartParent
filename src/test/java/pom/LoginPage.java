@@ -152,7 +152,7 @@ public class LoginPage extends Base_Page{
 		elementIsPresent(Forgotpopup);
 	}
 	
-	public void loginLinkOpen(){
+	public void openLoginPopup(){
 		loginlink.click();
 	}
 	

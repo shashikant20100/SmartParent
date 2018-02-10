@@ -12,8 +12,8 @@ public class Base_Test implements AutoConst{
 	
 	@BeforeMethod
 	public void openApplication(){
-		System.setProperty(Gecko_key,Gecko_Value);
-		driver=new FirefoxDriver();
+		System.setProperty(Chrome_key,Chrome_Value);
+		driver=new ChromeDriver();
 		driver.get("http://optime.in/apps/smartparent/smartparent_web/smart2/");
 		//driver.manage().window().maximize();
 	}

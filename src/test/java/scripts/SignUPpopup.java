@@ -15,7 +15,7 @@ public class SignUPpopup extends Base_Test{
 		LoginPage lp=new LoginPage(driver);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		lp.verifyTitle();
-		lp.loginLinkOpen();
+		lp.openLoginPopup();
 		lp.verifyloginpopup();
 		lp.signUplink();
 		lp.verifySignUpPop();
@@ -25,7 +25,7 @@ public class SignUPpopup extends Base_Test{
 		lp.setPassword("12345");
 		lp.setConfirmPassword("12345");
 		lp.clickSignUpbtn();
-		lp.SuccesSignupPopMsg();
+		lp.popmesg("Congrats ! Welcome to Smart Parent Family.");
 	}
 
 }

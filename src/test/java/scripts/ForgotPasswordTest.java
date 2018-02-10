@@ -11,7 +11,8 @@ public class ForgotPasswordTest extends Base_Test{
 	public void ForgotPassword() throws InterruptedException{
 		
 		LoginPage lp=new LoginPage(driver);
-		lp.loginLinkOpen();
+		lp.openLoginPopup();
+		lp.verifyloginpopup();
 		lp.forgotlink();
 		lp.verifyForgotPopup();
 		lp.enterForgotEmail("shashikant20100@gmail.com");

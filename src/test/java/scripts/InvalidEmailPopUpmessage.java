@@ -21,16 +21,16 @@ public class InvalidEmailPopUpmessage extends Base_Test {
 		LoginPage lp=new LoginPage(driver);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		lp.verifyTitle();
-		lp.loginLinkOpen();
-		lp.verifyloginpopup();
+		lp.openLoginPopup();
+		lp.verifyLoginpage();
 		lp.enterEmail("shashikant20100");
 		lp.enterPassword("23456789");
 		lp.sinInBtn();
-		lp.invalidEmailFormat();
+		lp.popmesg("Please enter a valid email or phone number");
 		lp.enterEmail("irmadan@gmail.com");
 		lp.enterPassword("12345");
 		lp.sinInBtn();
-		lp.validemailInvalidPassword();
+		lp.popmesg("Faliure");
 	}
 
 }
