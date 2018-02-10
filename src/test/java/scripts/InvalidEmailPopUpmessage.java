@@ -22,7 +22,7 @@ public class InvalidEmailPopUpmessage extends Base_Test {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		lp.verifyTitle();
 		lp.loginLinkOpen();
-		lp.verifyElement();
+		lp.verifyloginpopup();
 		lp.enterEmail("shashikant20100");
 		lp.enterPassword("23456789");
 		lp.sinInBtn();

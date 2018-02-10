@@ -156,7 +156,7 @@ public class LoginPage extends Base_Page{
 		loginlink.click();
 	}
 	
-	public void verifyElement(){
+	public void verifyloginpopup(){
 		elementIsPresent(loginpoptitle);
 	}
 	
@@ -231,4 +231,8 @@ public class LoginPage extends Base_Page{
 		singinbtn.click();		
 	}
 	
+	public void verifyLoginpage(){
+		elementIsPresent(loginlink);
+		
+	}
 }

@@ -18,7 +18,7 @@ public class ForgotPasswordTest extends Base_Test{
 		lp.sinInBtnInForgot();
 		Thread.sleep(1000);
 		lp.forgotTosignInPage();
-		lp.verifyElement();
+		lp.verifyloginpopup();
 	}
 	
 }

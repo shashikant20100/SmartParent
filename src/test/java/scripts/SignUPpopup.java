@@ -16,7 +16,7 @@ public class SignUPpopup extends Base_Test{
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		lp.verifyTitle();
 		lp.loginLinkOpen();
-		lp.verifyElement();
+		lp.verifyloginpopup();
 		lp.signUplink();
 		lp.verifySignUpPop();
 		lp.setFirstName("Shashi");

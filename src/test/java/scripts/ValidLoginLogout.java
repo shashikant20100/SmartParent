@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import generic.Base_Test;
 import generic.Excelfile;
+import pom.HomePage;
 import pom.LoginPage;
 
 public class ValidLoginLogout extends Base_Test{
@@ -19,10 +20,16 @@ public class ValidLoginLogout extends Base_Test{
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		lp.verifyTitle();
 		lp.loginLinkOpen();
-		lp.verifyElement();
+		lp.verifyloginpopup();
 		lp.enterEmail(un);
 		lp.enterPassword(pass);
 		lp.sinInBtn();
+		
+		HomePage hp=new HomePage(driver);
+		hp.verifyLogoutele();
+		hp.clickLogoutlink();
+		
+		lp.verifyLoginpage();
 	}
 	
 }
