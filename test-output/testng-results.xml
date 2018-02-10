@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[The Title of the Page is matching]]>
+    </line>
+    <line>
+      <![CDATA[The Element is present]]>
+    </line>
+    <line>
+      <![CDATA[The Title of the Page is matching]]>
+    </line>
+    <line>
+      <![CDATA[The Element is present]]>
+    </line>
+    <line>
+      <![CDATA[Displayed Invalid Email and Invalid password pop up]]>
+    </line>
+    <line>
+      <![CDATA[Displayed Valid Email and Invalid pop up]]>
+    </line>
+    <line>
+      <![CDATA[The Title of the Page is matching]]>
+    </line>
+    <line>
+      <![CDATA[The Element is present]]>
+    </line>
+    <line>
+      <![CDATA[The Element is present]]>
+    </line>
+    <line>
+      <![CDATA[The Element is present]]>
+    </line>
+    <line>
+      <![CDATA[The Element is present]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="192288" started-at="2018-02-10T15:10:25Z" finished-at="2018-02-10T15:13:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="192288" started-at="2018-02-10T15:10:25Z" finished-at="2018-02-10T15:13:37Z">
+      <class name="scripts.ValidLoginLogout">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:scripts.ValidLoginLogout@6500df86]" name="openApplication" is-config="true" duration-ms="28207" started-at="2018-02-10T15:10:25Z" finished-at="2018-02-10T15:10:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:scripts.ValidLoginLogout@6500df86]" name="LoginTest" duration-ms="2518" started-at="2018-02-10T15:10:53Z" finished-at="2018-02-10T15:10:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The Title of the Page is matching]]>
+            </line>
+            <line>
+              <![CDATA[The Element is present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:scripts.ValidLoginLogout@6500df86]" name="closeApp" is-config="true" duration-ms="434" started-at="2018-02-10T15:10:56Z" finished-at="2018-02-10T15:10:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.ValidLoginLogout -->
+      <class name="scripts.ForgotPasswordTest">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:scripts.ForgotPasswordTest@402a079c]" name="openApplication" is-config="true" duration-ms="32498" started-at="2018-02-10T15:13:01Z" finished-at="2018-02-10T15:13:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="ForgotPassword()[pri:0, instance:scripts.ForgotPasswordTest@402a079c]" name="ForgotPassword" duration-ms="3237" started-at="2018-02-10T15:13:34Z" finished-at="2018-02-10T15:13:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The Element is present]]>
+            </line>
+            <line>
+              <![CDATA[The Element is present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ForgotPassword -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:scripts.ForgotPasswordTest@402a079c]" name="closeApp" is-config="true" duration-ms="280" started-at="2018-02-10T15:13:37Z" finished-at="2018-02-10T15:13:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.ForgotPasswordTest -->
+      <class name="scripts.InvalidEmailPopUpmessage">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:scripts.InvalidEmailPopUpmessage@59ec2012]" name="openApplication" is-config="true" duration-ms="68022" started-at="2018-02-10T15:10:56Z" finished-at="2018-02-10T15:12:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="InvalidEmailPopUptest()[pri:0, instance:scripts.InvalidEmailPopUpmessage@59ec2012]" name="InvalidEmailPopUptest" duration-ms="3365" started-at="2018-02-10T15:12:04Z" finished-at="2018-02-10T15:12:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The Title of the Page is matching]]>
+            </line>
+            <line>
+              <![CDATA[The Element is present]]>
+            </line>
+            <line>
+              <![CDATA[Displayed Invalid Email and Invalid password pop up]]>
+            </line>
+            <line>
+              <![CDATA[Displayed Valid Email and Invalid pop up]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- InvalidEmailPopUptest -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:scripts.InvalidEmailPopUpmessage@59ec2012]" name="closeApp" is-config="true" duration-ms="500" started-at="2018-02-10T15:12:08Z" finished-at="2018-02-10T15:12:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.InvalidEmailPopUpmessage -->
+      <class name="scripts.SignUPpopup">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:scripts.SignUPpopup@4cf777e8]" name="openApplication" is-config="true" duration-ms="29740" started-at="2018-02-10T15:12:08Z" finished-at="2018-02-10T15:12:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="FAIL" signature="SignUp()[pri:0, instance:scripts.SignUPpopup@4cf777e8]" name="SignUp" duration-ms="23063" started-at="2018-02-10T15:12:38Z" finished-at="2018-02-10T15:13:01Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'DESKTOP-L3RI81U', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 936, moz:profile: C:\Users\OPTIME~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a4d17eab-138a-477f-abeb-fa1cacd79f49]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'DESKTOP-L3RI81U', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 936, moz:profile: C:\Users\OPTIME~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a4d17eab-138a-477f-abeb-fa1cacd79f49
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at generic.Base_Page.SuccesSignupPopMsg(Base_Page.java:94)
+at scripts.SignUPpopup.SignUp(SignUPpopup.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[The Title of the Page is matching]]>
+            </line>
+            <line>
+              <![CDATA[The Element is present]]>
+            </line>
+            <line>
+              <![CDATA[The Element is present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SignUp -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:scripts.SignUPpopup@4cf777e8]" name="closeApp" is-config="true" duration-ms="362" started-at="2018-02-10T15:13:01Z" finished-at="2018-02-10T15:13:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.SignUPpopup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
