@@ -13,8 +13,8 @@ public class AlreadyRegisteredUserPop extends Base_Test{
 	public void SignUp(){
 		LoginPage lp=new LoginPage(driver);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		lp.verifyTitle();
-		lp.openLoginPopup();
+		//lp.verifyTitle();
+	//	lp.openLoginPopup();
 		lp.verifyloginpopup();
 		lp.signUplink();
 		lp.verifySignUpPop();

@@ -3,19 +3,20 @@ package scripts;
 import org.testng.annotations.Test;
 
 import generic.Base_Test;
+import generic.Excelfile;
 import pom.LoginPage;
 
 public class ForgotPasswordTest extends Base_Test{
 
 	@Test
 	public void ForgotPassword() throws InterruptedException{
-		
+		String email=Excelfile.getexcelData(Excel_Path,"ForgotPassword",1,0);
 		LoginPage lp=new LoginPage(driver);
-		lp.openLoginPopup();
+		//lp.openLoginPopup();
 		lp.verifyloginpopup();
 		lp.forgotlink();
 		lp.verifyForgotPopup();
-		lp.enterForgotEmail("shashikant20100@gmail.com");
+		lp.enterForgotEmail(email);
 		lp.sinInBtnInForgot();
 		Thread.sleep(1000);
 		lp.forgotTosignInPage();

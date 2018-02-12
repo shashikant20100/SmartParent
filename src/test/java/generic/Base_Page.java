@@ -1,13 +1,15 @@
 package generic;
 
-import java.util.concurrent.TimeUnit;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
@@ -57,6 +59,7 @@ public abstract class Base_Page {
 	 wait.until(ExpectedConditions.alertIsPresent());
 		Alert pop = driver.switchTo().alert();
 		String text = pop.getText();
+		
 		if(text.equalsIgnoreCase(msg)){
 			Reporter.log("Displayed Valid Email and Invalid pop up",true);
 			pop.accept();
@@ -108,4 +111,30 @@ public abstract class Base_Page {
  }
  */
  
-}
+ 
+ 
+ /*public void linksTest(){
+	 List<WebElement> links = driver.findElements(By.tagName("a"));
+		System.out.println("The Total links are "+links.size());
+		int count=1;
+		for(int i=0;i<links.size();i++){
+			
+			if(links.get(i).getAttribute("href")!=null){
+				
+				try {
+					HttpURLConnection con=(HttpURLConnection) new URL(links.get(i).getAttribute("href")).openConnection();
+					con.connect();
+				String res=con.getResponseMessage();
+				System.out.println(count+" The Response of "+links.get(i).getAttribute("href")+" is "+res);
+				con.disconnect();
+				count++;
+				
+				} catch (Exception e) {
+					
+				
+			}}
+		}
+		}*/
+ }
+ 
+

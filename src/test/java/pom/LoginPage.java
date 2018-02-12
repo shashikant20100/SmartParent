@@ -19,7 +19,7 @@ public class LoginPage extends Base_Page{
 	@FindBy(xpath="(//button[.='Sign In'])[1]")
 	private WebElement singinbtn;
 	
-	@FindBy(xpath="(//input[@id='email'])[2]")
+	@FindBy(xpath="//input[@id='email' and @placeholder=' Email/Phone']")
 	private WebElement email;
 	
 	@FindBy(xpath="//input[@id='password']")

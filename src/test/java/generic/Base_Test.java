@@ -1,7 +1,6 @@
 package generic;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,9 +11,9 @@ public class Base_Test implements AutoConst{
 	
 	@BeforeMethod
 	public void openApplication(){
-		System.setProperty(Chrome_key,Chrome_Value);
-		driver=new ChromeDriver();
-		driver.get("http://optime.in/apps/smartparent/smartparent_web/smart2/");
+		System.setProperty(Gecko_key,Gecko_Value);
+		driver=new FirefoxDriver();
+		driver.get("http://52.66.23.50/webapp/");
 		//driver.manage().window().maximize();
 	}
 	
