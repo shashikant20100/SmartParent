@@ -10,7 +10,7 @@ import pom.LoginPage;
 
 public class ValidLoginLogout extends Base_Test{
 
-	@Test
+	@Test(priority=3)
 	public void LoginTest(){
 		String un=Excelfile.getexcelData(Excel_Path,"Login",3, 0);
 		String pass=Excelfile.getexcelData(Excel_Path,"Login",3, 1);

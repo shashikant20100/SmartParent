@@ -8,7 +8,7 @@ import pom.LoginPage;
 
 public class ForgotPasswordTest extends Base_Test{
 
-	@Test
+	@Test(priority=5)
 	public void ForgotPassword() throws InterruptedException{
 		String email=Excelfile.getexcelData(Excel_Path,"ForgotPassword",1,0);
 		LoginPage lp=new LoginPage(driver);

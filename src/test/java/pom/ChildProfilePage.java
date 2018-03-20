@@ -20,7 +20,7 @@ public class ChildProfilePage extends Base_Page{
 	@FindBy(xpath="//center[contains(.,'Create your child profile')]")
 	private WebElement childprofiletitle;
 	
-	@FindBy(xpath="//img[@id='camera_ph']")
+	@FindBy(xpath="//input[@id='file-input']")
 	private WebElement profileimage;
 	
 	@FindBy(xpath="//input[@placeholder='Enter First Name']")

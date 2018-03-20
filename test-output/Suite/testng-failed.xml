@@ -3,20 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="scripts.SignUPpopup">
+      <class name="script_FistTimeLogin.FistTimeRegistrationHomePage">
         <methods>
           <include name="closeApp"/>
-          <include name="SignUp"/>
+          <include name="fisrtlogin"/>
           <include name="openApplication"/>
         </methods>
-      </class> <!-- scripts.SignUPpopup -->
-      <class name="scripts.ForgotPasswordTest">
+      </class> <!-- script_FistTimeLogin.FistTimeRegistrationHomePage -->
+      <class name="scripts.FistTimeRegistrationHomePage">
         <methods>
           <include name="closeApp"/>
-          <include name="ForgotPassword"/>
           <include name="openApplication"/>
+          <include name="fisrtlogin"/>
         </methods>
-      </class> <!-- scripts.ForgotPasswordTest -->
+      </class> <!-- scripts.FistTimeRegistrationHomePage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

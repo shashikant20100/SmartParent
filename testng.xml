@@ -4,10 +4,12 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="scripts.InvalidEmailPopUpmessage"/>
+      <class name="scripts.FistTimeRegistrationHomePage"/>
       <class name="scripts.AlreadyRegisteredUserPop"/>
       <class name="scripts.SignUPpopup"/>
       <class name="pom.LoginPage"/>
       <class name="scripts.ValidLoginLogout"/>
+      <class name="script_FistTimeLogin.FistTimeRegistrationHomePage"/>
       <class name="scripts.ForgotPasswordTest"/>
     </classes>
   </test> <!-- Test -->

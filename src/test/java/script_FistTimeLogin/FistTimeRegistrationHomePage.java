@@ -2,6 +2,7 @@ package script_FistTimeLogin;
 
 import java.util.concurrent.TimeUnit;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.Base_Test;
@@ -9,10 +10,11 @@ import pom.ChildProfilePage;
 import pom.First_Time_Login_HomePage;
 import pom.LoginPage;
 import pom.SchoolDetailPage;
+import pom.UploadMarkSheetPage;
 
 public class FistTimeRegistrationHomePage extends Base_Test{
 	
-	@Test
+	@Test(priority=2)
 	public void fisrtlogin() throws InterruptedException {
 	
 //			String un=Excelfile.getexcelData(Excel_Path,"Login",3, 0);
@@ -21,7 +23,7 @@ public class FistTimeRegistrationHomePage extends Base_Test{
 			LoginPage lp=new LoginPage(driver);
 			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 			lp.verifyloginpopup();
-			lp.enterEmail("sha.rmakantshashi01@gmail.com");
+			lp.enterEmail("s.har.makantshashi01@gmail.com");
 			lp.enterPassword("12345");
 			lp.sinInBtn();
 			First_Time_Login_HomePage f=new First_Time_Login_HomePage(driver);
@@ -33,6 +35,7 @@ public class FistTimeRegistrationHomePage extends Base_Test{
 			f.parentCompany("Business");
 			f.nextBtn();
 			
+			Reporter.log("Child Profile Page",true);
 			ChildProfilePage ch=new ChildProfilePage(driver);
 			ch.childPoptitle();
 			ch.popOKBtn();
@@ -46,6 +49,7 @@ public class FistTimeRegistrationHomePage extends Base_Test{
 			ch.birthYear();
 			ch.nextBtn();
 			
+			Reporter.log("School Detail Page",true);
 			SchoolDetailPage sc=new SchoolDetailPage(driver);
 			sc.popPagetext();
 			sc.popOKbtn();
@@ -56,7 +60,17 @@ public class FistTimeRegistrationHomePage extends Base_Test{
 			sc.Curriculumm(2);
 			sc.nextButton();
 			
-			
+			Reporter.log("Upload Marks Card Page",true);
+			UploadMarkSheetPage um=new UploadMarkSheetPage(driver);
+			um.uploadMarksTITLE();
+			um.calendar();
+			um.selectDate();
+			um.remarkS("Testing");
+			um.titlE("10th");
+			um.gradE(2);
+			um.browseMarks("C:\\Users\\Optime Technologies\\Downloads\\markscard.jpg");
+			um.uploadBtn();
+			um.alertMsg();	
 			
 		}
 		

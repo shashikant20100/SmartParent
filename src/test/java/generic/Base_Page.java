@@ -70,7 +70,11 @@ public abstract class Base_Page {
 	}
  
  
-
+public void alertPop() {
+	WebDriverWait wait=new WebDriverWait(driver,10);
+	wait.until(ExpectedConditions.alertIsPresent());
+	driver.switchTo().alert().accept();
+}
  
  
  /*

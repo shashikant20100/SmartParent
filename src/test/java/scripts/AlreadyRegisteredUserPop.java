@@ -9,7 +9,7 @@ import pom.LoginPage;
 
 public class AlreadyRegisteredUserPop extends Base_Test{
 
-	@Test
+	@Test(priority=4)
 	public void SignUp(){
 		LoginPage lp=new LoginPage(driver);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

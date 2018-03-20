@@ -10,7 +10,7 @@ import pom.LoginPage;
 
 public class InvalidEmailPopUpmessage extends Base_Test {
 	
-	@Test
+	@Test(priority=6)
 	public void InvalidEmailPopUptest() throws InterruptedException{
 //		String invaliun=Excelfile.getexcelData(Excel_Path,"Login",1, 0);
 //		String invalipass1=Excelfile.getexcelData(Excel_Path,"Login",1, 1);
