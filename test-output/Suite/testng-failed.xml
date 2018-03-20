@@ -10,6 +10,13 @@
           <include name="openApplication"/>
         </methods>
       </class> <!-- scripts.SignUPpopup -->
+      <class name="scripts.ForgotPasswordTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="ForgotPassword"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- scripts.ForgotPasswordTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

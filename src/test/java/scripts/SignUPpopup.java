@@ -21,11 +21,11 @@ public class SignUPpopup extends Base_Test{
 		lp.verifySignUpPop();
 		lp.setFirstName("Shashi");
 		lp.setLastName("Sharma");
-		lp.setemailORphonet("9639195753");
+		lp.setemailORphonet("sha.rmakantshashi01@gmail.com");
 		lp.setPassword("12345");
 		lp.setConfirmPassword("12345");
 		lp.clickSignUpbtn();
-		lp.popmesg("Congrats ! Welcome to Smart Parent Family.");
+		lp.popmesg("Welcome Email Sent");
 	}
 
 }

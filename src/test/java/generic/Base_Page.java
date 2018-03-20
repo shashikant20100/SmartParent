@@ -1,11 +1,6 @@
 package generic;
 
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.List;
-
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,15 +12,16 @@ public abstract class Base_Page {
 	
 	public WebDriver driver;
 	
+	
  public Base_Page(WebDriver driver){
 	 this.driver=driver;
 }
 
  public void pageTitle(String title){
 	 WebDriverWait wait=new WebDriverWait(driver,30);
-	 Reporter.log("The Title of the Page is matching",true);
 	 try{
 	 wait.until(ExpectedConditions.titleContains(title));
+	 Reporter.log("The Title of the Page is matching",true);
 	 }
 	 catch(Exception e){
 		 Reporter.log("The Title of the Page is not matching",true);
@@ -59,8 +55,8 @@ public abstract class Base_Page {
 	 wait.until(ExpectedConditions.alertIsPresent());
 		Alert pop = driver.switchTo().alert();
 		String text = pop.getText();
-		
-		if(text.equalsIgnoreCase(msg)){
+		System.out.println(text);
+		if(text.contains(msg)){
 			Reporter.log("Displayed Valid Email and Invalid pop up",true);
 			pop.accept();
 		}
@@ -72,6 +68,10 @@ public abstract class Base_Page {
 			a.assertAll();
 		}
 	}
+ 
+ 
+
+ 
  
  /*
  public void invalidEmailFormat(){

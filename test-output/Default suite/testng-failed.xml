@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.SignUPpopup">
+      <class name="scripts.FistTimeRegistrationHomePage">
         <methods>
           <include name="closeApp"/>
-          <include name="SignUp"/>
           <include name="openApplication"/>
+          <include name="fisrtlogin"/>
         </methods>
-      </class> <!-- scripts.SignUPpopup -->
+      </class> <!-- scripts.FistTimeRegistrationHomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
